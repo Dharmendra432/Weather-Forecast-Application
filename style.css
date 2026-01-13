@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Default background override (fallback) */
+  body {
+    transition: background 0.6s ease-in-out;
+  }
+  
+  /* -------- Weather Based Backgrounds -------- */
+  
+  /* Sunny */
+  .sunny-bg {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b) !important;
+  }
+  
+  /* Cloudy */
+  .cloudy-bg {
+    background: linear-gradient(135deg, #9ca3af, #6b7280) !important;
+  }
+  
+  /* Rainy */
+  .rainy-bg {
+    background: linear-gradient(135deg, #2563eb, #1e3a8a) !important;
+  }
+  
+  /* Snow */
+  .snowy-bg {
+    background: linear-gradient(135deg, #e5e7eb, #9ca3af) !important;
+  }
+  
+  /* -------- Forecast Cards Hover Effect -------- */
+  #forecast div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #forecast div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* -------- Error Message Styling -------- */
+  #errorMsg {
+    font-weight: 500;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  /* -------- Fade In Animation -------- */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* -------- Button Active Effect -------- */
+  button:active {
+    transform: scale(0.97);
+  }
+  
+  /* -------- Dropdown Styling -------- */
+  select {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* -------- Small Screen Enhancements -------- */
+  @media (max-width: 640px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
